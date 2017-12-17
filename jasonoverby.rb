@@ -13,23 +13,18 @@ before do
   @nav_links = { 'artwork'        => '/',
                  'comics'         => 'comics',
                  being_being_logo => 'thebeingbeing',
+                 'doodles'        => 'http://doodles-academy.org',
                  'git'            => 'http://github.com/jasonoverby',
                  'linkedin'       => 'http://www.linkedin.com/in/jasoncoverby/',
                  'email'          => 'mailto:jason.c.overby@gmail.com' }
 end
 
 helpers do
-  def image_files(directory)
-    files = Dir.entries("public/images/#{directory}")
-    files.reject! { |file| file.start_with?('.') }
-    directory == 'art' ? files.shuffle! : files.sort!
-
-    alt_text = files.map do |filename|
+  def alt_text_from_filename(files)
+    files.map do |filename|
       filename.gsub(/^\d{2}/, '').tr('_', ' ')
               .gsub(/'.jpg'/, '').split.map(&:capitalize).join(' ')
     end.join(', ')
-
-    { files: files.join(', '), alt_text: alt_text }
   end
 
   def gallery(directory)
@@ -42,6 +37,15 @@ helpers do
     images.map do |filename, alt|
       "<img src='/images/#{directory}/#{filename}' alt='#{alt}' />"
     end.join
+  end
+
+  def image_files(directory)
+    files = Dir.entries("public/images/#{directory}")
+    files.reject! { |file| file.start_with?('.') }
+    directory == 'art' ? files.shuffle! : files.sort!
+    alt_text = alt_text_from_filename(files)
+
+    { files: files.join(', '), alt_text: alt_text }
   end
 
   def list_items_with_anchors(link_text_and_url)
