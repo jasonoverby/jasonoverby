@@ -20,7 +20,7 @@ end
 
 helpers do
   def image_files(directory)
-    files = Dir.entries("public/images/#{directory}")
+    files = Dir.entries("public/images/#{directory}").shuffle
     files.reject! { |file| file.start_with?('.') }
 
     alt_text = files.map do |filename|
