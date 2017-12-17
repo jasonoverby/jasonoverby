@@ -20,7 +20,8 @@ end
 
 helpers do
   def image_files(directory)
-    files = Dir.entries("public/images/#{directory}")[2..-1]
+    files = Dir.entries("public/images/#{directory}")
+    files.reject! { |file| file.start_with?('.') }
 
     alt_text = files.map do |filename|
       filename.gsub(/^\d{2}/, '').tr('_', ' ')
