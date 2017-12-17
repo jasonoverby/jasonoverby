@@ -20,12 +20,13 @@ end
 
 helpers do
   def image_files(directory)
-    files = Dir.entries("public/images/#{directory}").shuffle
+    files = Dir.entries("public/images/#{directory}")
     files.reject! { |file| file.start_with?('.') }
+    files.shuffle! if directory == 'art'
 
     alt_text = files.map do |filename|
       filename.gsub(/^\d{2}/, '').tr('_', ' ')
-              .gsub(/(.jpg|.png)/, '').split.map(&:capitalize).join(' ')
+              .gsub(/'.jpg'/, '').split.map(&:capitalize).join(' ')
     end.join(', ')
 
     { files: files.join(', '), alt_text: alt_text }

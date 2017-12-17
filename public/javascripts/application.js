@@ -7,9 +7,9 @@ $(function() {
     function advanceImage() {
       $('.art-image').attr("src", `/images/art/${art[i]}`).attr("alt", art_alt_text[i]);
       i = i < (art.length - 1) ? i + 1 : 0;
-      setTimeout(advanceImage, 3000);
+      setTimeout(advanceImage, 8000);
     }
 
-    setTimeout(advanceImage, 3000);
+    setTimeout(advanceImage, 8000);
   }
 });
