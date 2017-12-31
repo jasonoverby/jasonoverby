@@ -11,24 +11,19 @@ body {
   Helvetica, Arial, sans-serif;
 }
 
-h1 {
+h1, a, li {
   font-size: 1.5rem;
-  font-weight: normal;
 }
 
-.comics a {
-  font-size: 1.5rem;
+h1 {
+  font-weight: normal;
 }
 
 /* ========================
 
-           Clearfix
+           Float
 
    ======================== */
-
-.left {
-  float: left;
-}
 
 .right {
   float: right;
@@ -42,15 +37,19 @@ h1 {
 
 /* ========================
 
-            Widths
+          Structure
 
    ======================== */
 
-nav.left {
+nav {
+  left: 10px;
+  position: fixed;
+  top: 10px;
   width: 30%;
 }
 
-div.right {
+main.right {
+  margin-top: 1.5rem;
   width: 70%;
 }
 
@@ -60,17 +59,12 @@ div.right {
 
    ======================== */
 
-ul {
-  list-style: none;
+nav ul {
+  margin: 1em;
 }
 
 li {
-  font-size: 1.5rem;
   margin-bottom: 20px;
-}
-
-li:last-of-type {
-  margin-bottom: 0;
 }
 
 /* ========================
@@ -100,10 +94,6 @@ a:hover {
   width: 300px;
 }
 
-.gallery img:last-of-type {
-  margin-right: 30px;
-}
-
 .gallery .art-image {
   width: 500px;
 }
@@ -122,10 +112,10 @@ a:hover {
   width: 70px;
 }
 
-.click-these.letters {
+.click-these {
   width: 300px;
 }
 
-.the-being-being {
-  margin-top: 1rem;
+.the-being-being h1, .the-being-being p {
+  margin-bottom: 1rem;
 }
