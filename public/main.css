@@ -4,6 +4,10 @@
 
    ======================== */
 
+html {
+  font-size: 30px;
+}
+
 body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri,
   "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
@@ -21,35 +25,21 @@ h1 {
 
 /* ========================
 
-           Float
-
-   ======================== */
-
-.right {
-  float: right;
-}
-
-.cf:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-/* ========================
-
           Structure
 
    ======================== */
 
 nav {
   left: 10px;
-  position: fixed;
+  position: absolute;
   top: 10px;
   width: 30%;
 }
 
-main.right {
-  margin-top: 1.5rem;
+main {
+  left: 300px;
+  position: absolute;
+  top: 30px;
   width: 70%;
 }
 
@@ -60,11 +50,11 @@ main.right {
    ======================== */
 
 nav ul {
-  margin: 1em;
+  margin: 20px;
 }
 
 li {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* ========================
@@ -89,13 +79,13 @@ a:hover {
    ======================== */
 
 .gallery img {
-  margin-bottom: 30px;
-  margin-right: 30px;
-  width: 300px;
+  margin: 0 30px 30px 0;
+  width: 25%;
 }
 
 .gallery .art-image {
-  width: 500px;
+  height: 90vh;
+  width: auto;
 }
 
 /* ========================
@@ -109,11 +99,11 @@ a:hover {
 }
 
 .being-being {
-  width: 70px;
+  width: 100px;
 }
 
 .click-these {
-  width: 300px;
+  width: 400px;
 }
 
 .the-being-being h1, .the-being-being p {
