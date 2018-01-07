@@ -83,8 +83,15 @@ nav a {
 }
 
 .gallery .art-image {
+  margin: 0;
   height: 80vh;
   width: auto;
+}
+
+@media all and (max-width: 420px) {
+  .gallery .art-image {
+    height: 50vh;
+  }
 }
 
 /* ========================

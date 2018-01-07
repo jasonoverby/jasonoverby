@@ -60,8 +60,7 @@ get '/' do
   @art = image_files('art')
   art_files = @art[:files].split(', ')
   art_alt_text = @art[:alt_text].split(', ')
-  @img_left = { name: art_files.first, alt: art_alt_text.first }
-  @img_right = { name: art_files[1], alt: art_alt_text[1] }
+  @first_img = { name: art_files.first, alt: art_alt_text.first }
 
   erb :home
 end
