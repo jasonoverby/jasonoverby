@@ -90,7 +90,8 @@ nav a {
 
 @media all and (max-width: 420px) {
   .gallery .art-image {
-    height: 50vh;
+    height: auto;
+    max-width: 400px;
   }
 }
 
