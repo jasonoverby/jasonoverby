@@ -88,7 +88,7 @@ nav a {
   width: auto;
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 480px) {
   .gallery .art-image {
     height: auto;
     max-width: 400px;
