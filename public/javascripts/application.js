@@ -1,4 +1,6 @@
 window.addEventListener('load', () => {
+  let advanceImageId;
+
   if (document.querySelector('.art')) {
     const gallery = document.querySelector('.art');
     const art = gallery.dataset.images.split(', ');
@@ -10,9 +12,11 @@ window.addEventListener('load', () => {
       artImage.setAttribute('src', `/images/art/${art[imgCounter]}`);
       artImage.setAttribute('alt', artAltText[imgCounter]);
       imgCounter = imgCounter < (art.length - 1) ? imgCounter + 1 : 0;
-      setTimeout(advanceImage, 5000);
     };
 
-    setTimeout(advanceImage, 5000);
+    clearInterval(advanceImageId);
+    advanceImageId = setInterval(advanceImage, 5000);
+  } else {
+    clearInterval(advanceImageId);
   }
 });
