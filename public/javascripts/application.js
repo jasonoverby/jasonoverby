@@ -1,17 +1,18 @@
-/* eslint-env jquery */
+window.addEventListener('load', () => {
+  if (document.querySelector('.art')) {
+    const gallery = document.querySelector('.art');
+    const art = gallery.dataset.images.split(', ');
+    const artAltText = gallery.dataset.altText.split(', ');
+    let imgCounter = 0;
 
-$(() => {
-  if ($('*').hasClass('art')) {
-    const art = $('.art').data('images').split(', ');
-    const artAltText = $('.art').data('alt-text').split(', ');
-    let imgCounter = 1;
-
-    const fn = function advanceImage() {
-      $('.art-image').attr('src', `/images/art/${art[imgCounter]}`).attr('alt', artAltText[imgCounter]);
-      imgCounter = imgCounter < (art.length - 1) ? imgCounter + 2 : 0;
-      setTimeout(fn, 8000);
+    const advanceImage = () => {
+      const artImage = document.querySelector('.art-image');
+      artImage.setAttribute('src', `/images/art/${art[imgCounter]}`);
+      artImage.setAttribute('alt', artAltText[imgCounter]);
+      imgCounter = imgCounter < (art.length - 1) ? imgCounter + 1 : 0;
+      setTimeout(advanceImage, 5000);
     };
 
-    setTimeout(fn, 8000);
+    setTimeout(advanceImage, 5000);
   }
 });
