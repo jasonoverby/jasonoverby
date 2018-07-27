@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
     };
 
     clearInterval(advanceImageId);
-    advanceImageId = setInterval(advanceImage, 5000);
+    advanceImageId = setInterval(advanceImage, 8000);
   } else {
     clearInterval(advanceImageId);
   }
