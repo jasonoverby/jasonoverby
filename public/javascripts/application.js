@@ -5,6 +5,8 @@ window.addEventListener('load', () => {
     const gallery = document.querySelector('.art');
     const art = gallery.dataset.images.split(', ');
     const artAltText = gallery.dataset.altText.split(', ');
+    delete gallery.dataset.images;
+    delete gallery.dataset.altText;
     let imgCounter = 0;
 
     const advanceImage = () => {
