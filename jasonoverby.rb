@@ -16,7 +16,7 @@ before do
                  'doodles'        => 'http://doodles-academy.org',
                  'git'            => 'http://github.com/jasonoverby',
                  'linkedin'       => 'http://www.linkedin.com/in/jasoncoverby/',
-                 'email'          => 'mailto:jason.c.overby@gmail.com' }
+                 'email'          => 'mailto:j@jasonoverby.com' }
 end
 
 helpers do
