@@ -1,11 +1,11 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-ruby "2.4.1"
+ruby '2.5.1'
 
-gem "sinatra", "~>2.0.3"
-gem "sinatra-contrib"
-gem "erubis"
+gem 'erubis'
+gem 'sinatra', '~>2.0.4'
+gem 'sinatra-contrib', '~>2.0.4'
 
 group :production do
-  gem "puma"
+  gem 'puma'
 end

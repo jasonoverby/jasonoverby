@@ -1,26 +1,35 @@
 /* ========================
 
-             Font
+           General
 
    ======================== */
 
 html {
-  font-size: 20px;
+  background-color: #282828;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #282828;
 }
 
 body {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri,
-  "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
-  "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
-  Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
-h1, a, li {
-  font-size: 1.5rem;
-}
+/* ========================
+
+          Headings
+
+   ======================== */
 
 h1 {
+  font-size: 1.7rem;
   font-weight: normal;
+}
+
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
 }
 
 /* ========================
@@ -29,12 +38,37 @@ h1 {
 
    ======================== */
 
-nav, main {
+nav {
+  background-color: #282828;
+  color: #fbf1c7;
+  margin-bottom: 1rem;
+  padding: 30px 0 40px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+main > * {
+  padding: 40px 300px 100px 100px;
+}
+
+header {
+  background-color: #282828;
+  color: #fbf1c7;
+  padding-top: 160px;
+}
+
+header p:last-of-type {
+  font-size: 2em;
+  padding-top: 260px;
+  padding-left: 200px;
   text-align: center;
 }
 
-nav {
-  margin: 20px 0;
+section {
+  background-color: #fbf1c7;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 /* ========================
@@ -47,8 +81,25 @@ nav li {
   display: inline-block;
 }
 
-li {
-  margin-bottom: 1.25rem;
+section ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+section li {
+  font-size: 0.8em;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+section li:before {
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  content: "»";
+  font-size: 1.2em;
 }
 
 /* ========================
@@ -58,62 +109,14 @@ li {
    ======================== */
 
 a {
-  color: black;
+  color: #98971a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #216400;
+  color: #79740e;
 }
 
 nav a {
-  font-size: 1rem;
   padding: 4vw;
-}
-
-/* ========================
-
-           Images
-
-   ======================== */
-
-.gallery img {
-  margin: 0 30px 30px 0;
-  width: 25%;
-}
-
-.gallery .art-image {
-  margin: 0;
-  height: 80vh;
-  width: auto;
-}
-
-@media (max-device-width: 480px) {
-  .gallery .art-image {
-    height: auto;
-    max-width: 90vw;
-  }
-}
-
-/* ========================
-
-        Being Being
-
-   ======================== */
-
-.letters {
-  filter: saturate(.5) hue-rotate(90deg);
-}
-
-.being-being {
-  vertical-align: middle;
-  width: 50px;
-}
-
-.click-these {
-  width: 400px;
-}
-
-.the-being-being h1, .the-being-being p {
-  margin-bottom: 1rem;
 }
