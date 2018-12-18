@@ -11,19 +11,25 @@ html {
   color: #282828;
 }
 
-/* ========================
-
-             Font
-
-   ======================== */
-
 body {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* ========================
+
+          Headings
+
+   ======================== */
+
 h1 {
   font-size: 1.7rem;
   font-weight: normal;
+}
+
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
 }
 
 /* ========================
@@ -61,6 +67,7 @@ header p:last-of-type {
 
 section {
   background-color: #fbf1c7;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
@@ -76,9 +83,11 @@ nav li {
 
 section ul {
   list-style: none;
+  margin-top: 40px;
 }
 
 section li {
+  font-size: 0.8em;
   position: relative;
   padding-left: 20px;
   margin-bottom: 20px;
@@ -88,7 +97,7 @@ section li:before {
   display: block;
   position: absolute;
   top: -6px;
-  left: -5px;
+  left: -10px;
   content: "»";
   font-size: 1.2em;
 }
