@@ -29,7 +29,6 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
-  margin-bottom: 40px;
 }
 
 /* ========================
@@ -48,20 +47,19 @@ nav {
   width: 100%;
 }
 
-main > * {
-  padding: 40px 300px 100px 100px;
-}
-
 header {
   background-color: #282828;
   color: #fbf1c7;
-  padding-top: 160px;
+  padding: 160px 40px 60px 100px;
 }
 
 section {
   background-color: #fbf1c7;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding: 100px 40px 100px 100px;
+}
+
+h1, h2, p, img {
+  margin-bottom: 50px;
 }
 
 /* ========================
@@ -72,27 +70,6 @@ section {
 
 nav li {
   display: inline-block;
-}
-
-section ul {
-  list-style: none;
-  margin-top: 40px;
-}
-
-section li {
-  font-size: 0.8em;
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-section li:before {
-  display: block;
-  position: absolute;
-  top: -6px;
-  left: -10px;
-  content: "»";
-  font-size: 1.2em;
 }
 
 /* ========================
@@ -112,4 +89,16 @@ a:hover {
 
 nav a {
   padding: 4vw;
+}
+
+/* ========================
+
+           Images
+
+   ======================== */
+
+.bam-deploy {
+  border: 10px solid #282828;
+  border-radius: 10px;
+  height: 300px;
 }
