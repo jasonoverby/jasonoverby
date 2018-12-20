@@ -98,6 +98,7 @@ nav a {
    ======================== */
 
 .bam-deploy {
+  background-color: #282828;
   border: 10px solid #282828;
   border-radius: 10px;
   height: 300px;
