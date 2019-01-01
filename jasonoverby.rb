@@ -6,9 +6,8 @@ require 'tilt/erubis'
 
 before do
   @title = 'JASON OVERBY'
-  @nav_links = { 'git'            => 'http://github.com/jasonoverby',
+  @nav_links = { 'github'         => 'http://github.com/jasonoverby',
                  'linkedin'       => 'http://www.linkedin.com/in/jasoncoverby/',
-                 'resume'         => 'images/JasonOverbyResume2018.pdf',
                  'email'          => 'mailto:j@jasonoverby.com' }
 end
 
