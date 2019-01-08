@@ -243,11 +243,39 @@ section {
 }
 
 @media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
   .bam-deploy {
     height: 40vw;
   }
 
   .button {
     font-size: 0.5rem;
+  }
+
+  .social-icon {
+    width: 20px;
+  }
+
+  header {
+    padding: 100px 50px 60px 50px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  nav li {
+    padding-right: 35px;
+  }
+
+  nav li:last-of-type {
+    padding-right: 0;
+  }
+
+  .more-about-me {
+    margin-top: 50px;
   }
 }
