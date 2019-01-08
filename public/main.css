@@ -301,4 +301,8 @@ section {
   header {
     padding-top: 90px;
   }
+
+  p, h2 {
+    margin-bottom: 20px;
+  }
 }
