@@ -26,6 +26,15 @@ h3 {
   font-size: 1.2rem;
 }
 
+a {
+  color: #98971a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #79740e;
+}
+
 p,
 img {
   margin-bottom: 50px;
@@ -67,6 +76,20 @@ nav li:last-of-type {
   padding-right: 40px;
 }
 
+.social-icon {
+  margin-bottom: 0;
+  width: 30px;
+}
+
+.social-icon:hover {
+  opacity: 0.5;
+}
+
+nav li:first-of-type .social-icon {
+  vertical-align: -3px;
+  width: 35px;
+}
+
 /* ========================
 
           Header
@@ -84,6 +107,12 @@ header h3 {
   font-weight: normal;
 }
 
+.jason {
+  float: left;
+  margin: 13px 60px 100px 0;
+  width: 300px;
+}
+
 /* ========================
 
         Section
@@ -98,56 +127,6 @@ section {
 
 /* ========================
 
-           Links
-
-   ======================== */
-
-a {
-  color: #98971a;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #79740e;
-}
-
-/* ========================
-
-           Images
-
-   ======================== */
-
-.jason {
-  float: left;
-  margin: 13px 60px 100px 0;
-  width: 300px;
-}
-
-.bam-deploy {
-  background-color: #282828;
-  border: 10px solid #282828;
-  border-radius: 10px;
-  height: 300px;
-  margin-bottom: 0;
-}
-
-.social-icon {
-  margin-bottom: 0;
-  width: 30px;
-}
-
-.social-icon:hover {
-  opacity: 0.5;
-}
-
-nav li:first-of-type .social-icon {
-  vertical-align: -3px;
-  width: 35px;
-}
-
-
-/* ========================
-
             BAM!
 
    ======================== */
@@ -158,6 +137,14 @@ nav li:first-of-type .social-icon {
 
 .bam p {
   margin-bottom: 20px;
+}
+
+.bam-deploy {
+  background-color: #282828;
+  border: 10px solid #282828;
+  border-radius: 10px;
+  height: 300px;
+  margin-bottom: 0;
 }
 
 .button {
@@ -215,7 +202,7 @@ nav li:first-of-type .social-icon {
 
 @media (max-width: 1150px) {
   .jason {
-    display: none;
+    width: 200px;
   }
 
   nav p {
@@ -241,6 +228,10 @@ nav li:first-of-type .social-icon {
 
 
 @media (max-width: 900px) {
+  .jason {
+    display: none;
+  }
+
   .more-about-me div {
     margin-right: 0;
     width: 100%;
