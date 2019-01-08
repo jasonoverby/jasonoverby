@@ -12,12 +12,6 @@ html {
   color: #282828;
 }
 
-/* ========================
-
-          Headings
-
-   ======================== */
-
 h1 {
   font-size: 1.7rem;
   margin-bottom: 20px;
@@ -32,33 +26,6 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* ========================
-
-          Structure
-
-   ======================== */
-
-nav {
-  background-color: #282828;
-  color: #fbf1c7;
-  padding: 20px 0 15px 0;
-  position: fixed;
-  text-align: right;
-  width: 100%;
-}
-
-header {
-  background-color: #282828;
-  color: #fbf1c7;
-  padding: 180px 200px 60px 200px;
-}
-
-section {
-  background-color: #fbf1c7;
-  clear: both;
-  padding: 80px 200px;
-}
-
 p,
 img {
   margin-bottom: 50px;
@@ -71,9 +38,18 @@ em {
 
 /* ========================
 
-        List Items
+            Nav
 
    ======================== */
+
+nav {
+  background-color: #282828;
+  color: #fbf1c7;
+  padding: 20px 0 15px 0;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
 
 nav li {
   display: inline-block;
@@ -89,6 +65,35 @@ nav p {
 
 nav li:last-of-type {
   padding-right: 40px;
+}
+
+/* ========================
+
+          Header
+
+   ======================== */
+
+header {
+  background-color: #282828;
+  color: #fbf1c7;
+  padding: 180px 200px 60px 200px;
+}
+
+header h2,
+header h3 {
+  font-weight: normal;
+}
+
+/* ========================
+
+        Section
+
+   ======================== */
+
+section {
+  background-color: #fbf1c7;
+  clear: both;
+  padding: 80px 200px;
 }
 
 /* ========================
