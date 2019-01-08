@@ -12,11 +12,6 @@ html {
   color: #282828;
 }
 
-/* body { */
-  /* background-color: #282828; */
-  /* font-family: 'Roboto Mono', monospace; */
-/* } */
-
 /* ========================
 
           Headings
@@ -42,15 +37,11 @@ h2 {
 nav {
   background-color: #282828;
   color: #fbf1c7;
-  padding: 40px 0 40px 0;
+  padding: 25px 0 40px 0;
   position: fixed;
   text-align: right;
   width: 100%;
 }
-
-/* main { */
-  /* margin:  */
-/* } */
 
 header {
   background-color: #282828;
@@ -67,6 +58,10 @@ h1, h2, p, img {
   margin-bottom: 50px;
 }
 
+section > p:first-of-type {
+  margin-bottom: 25px;
+}
+
 /* ========================
 
         List Items
@@ -75,7 +70,8 @@ h1, h2, p, img {
 
 nav li {
   display: inline-block;
-  padding-right: 90px;
+  padding-right: 70px;
+  font-size: 0.6rem;
 }
 
 /* ========================
@@ -91,6 +87,23 @@ a {
 
 a:hover {
   color: #79740e;
+}
+
+a.button {
+  background-color: #282828;
+  border: 0;
+  border-radius: 5px;
+  color: #fbf1c7;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+}
+
+a.button:hover {
+  background-color: #98971a;
 }
 
 /* ========================

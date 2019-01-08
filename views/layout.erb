@@ -11,16 +11,14 @@
   </head>
 
   <body>
-    <div>
-      <nav>
-        <ul>
-          <%= list_items_with_anchors(@nav_links) %>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <%= list_items_with_anchors(@nav_links) %>
+      </ul>
+    </nav>
 
-      <main>
-        <%= yield %>
-      </main>
-    </div>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
