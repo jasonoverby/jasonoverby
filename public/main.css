@@ -22,10 +22,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-h3 {
-  font-size: 1.2rem;
-}
-
 a {
   color: #98971a;
   text-decoration: none;
@@ -102,9 +98,12 @@ header {
   padding: 180px 200px 60px 200px;
 }
 
-header h2,
-header h3 {
+header h2 {
   font-weight: normal;
+}
+
+header p {
+  margin-bottom: 0;
 }
 
 .jason {
