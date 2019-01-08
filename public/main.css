@@ -154,7 +154,7 @@ nav li:first-of-type .social-icon {
 
    ======================== */
 
-@media (max-width: 800px) {
+@media (max-width: 940px) {
   .jason {
     display: none;
   }
