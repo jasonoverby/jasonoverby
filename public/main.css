@@ -103,6 +103,7 @@ header h2 {
 }
 
 header p {
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 
@@ -214,6 +215,10 @@ section {
 
   header {
     padding: 145px 100px 100px 100px;
+  }
+
+  header p {
+    font-size: 1rem;
   }
 
   section {
