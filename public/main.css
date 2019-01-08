@@ -166,6 +166,10 @@ a:hover {
     display: none;
   }
 
+  nav li:last-of-type {
+    padding-right: 0;
+  }
+
   .bam-deploy {
     height: 40vw;
   }
