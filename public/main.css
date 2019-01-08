@@ -7,7 +7,7 @@
 html {
   background-color: #282828;
   font-family: 'Roboto Mono', monospace;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.5;
   color: #282828;
 }
@@ -24,9 +24,9 @@ h1 {
   margin-bottom: 20px;
 }
 
-
 h2 {
   font-size: 1.4rem;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -56,22 +56,18 @@ header {
 
 section {
   background-color: #fbf1c7;
-  padding: 100px 200px;
+  clear: both;
+  padding: 80px 200px;
 }
 
-h2, p, img {
+p,
+img {
   margin-bottom: 50px;
 }
 
 em {
   font-weight: bold;
   font-style: italic;
-}
-
-.bam {
-  border-radius: 5px;
-  margin-bottom: 50px;
-  padding: 40px;
 }
 
 /* ========================
@@ -111,23 +107,6 @@ a:hover {
   color: #79740e;
 }
 
-.button {
-  background-color: #fbf1c7;
-  border: 2px solid #282828;
-  border-radius: 5px;
-  color: #282828;
-  font-size: 0.6rem;
-  font-weight: bold;
-  padding: 0.4rem 0.6rem;
-  text-transform: uppercase;
-}
-
-.button:hover {
-  background-color: #282828;
-  border: 0;
-  color: #fbf1c7;
-}
-
 /* ========================
 
            Images
@@ -136,7 +115,7 @@ a:hover {
 
 .jason {
   float: left;
-  margin: 0 60px 20px 0;
+  margin: 13px 60px 100px 0;
   width: 300px;
 }
 
@@ -163,6 +142,66 @@ nav li:first-of-type .social-icon {
 }
 
 
+/* ========================
+
+            BAM!
+
+   ======================== */
+
+.bam {
+  margin-bottom: 50px;
+}
+
+.bam p {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #fbf1c7;
+  border: 2px solid #282828;
+  border-radius: 5px;
+  color: #282828;
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #282828;
+  color: #fbf1c7;
+}
+
+/* ========================
+
+      More About Me
+
+   ======================== */
+
+.more-about-me {
+  margin-top: 100px;
+}
+
+.more-about-me div {
+  width: 45%;
+}
+
+.more-about-me div:first-of-type {
+  float: left;
+  margin-right: 40px;
+}
+
+.more-about-me div:last-of-type {
+  float: right;
+}
+
+.more-about-me:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 /* ========================
 
@@ -170,7 +209,7 @@ nav li:first-of-type .social-icon {
 
    ======================== */
 
-@media (max-width: 940px) {
+@media (max-width: 1150px) {
   .jason {
     display: none;
   }
@@ -179,12 +218,16 @@ nav li:first-of-type .social-icon {
     display: none;
   }
 
+  nav li:last-of-type {
+    padding-right: 0;
+  }
+
   header {
     padding: 145px 100px 60px 100px;
   }
 
   section {
-    padding: 100px;
+    padding: 80px;
   }
 
   nav {
@@ -192,15 +235,15 @@ nav li:first-of-type .social-icon {
   }
 }
 
+
+@media (max-width: 900px) {
+  .more-about-me div {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
-  body {
-    font-size: 24px;
-  }
-
-  nav li:last-of-type {
-    padding-right: 0;
-  }
-
   .bam-deploy {
     height: 40vw;
   }
