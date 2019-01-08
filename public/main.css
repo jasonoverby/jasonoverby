@@ -158,6 +158,10 @@ a:hover {
     font-size: 24px;
   }
 
+  header {
+    padding-top: 100px;
+  }
+
   nav {
     text-align: center;
   }
