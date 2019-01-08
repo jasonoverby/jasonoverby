@@ -26,6 +26,10 @@ h1 {
 
 
 h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
   font-size: 1.2rem;
 }
 
@@ -57,6 +61,17 @@ section {
 
 h2, p, img {
   margin-bottom: 50px;
+}
+
+em {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bam {
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding: 40px;
 }
 
 /* ========================
@@ -130,6 +145,7 @@ a:hover {
   border: 10px solid #282828;
   border-radius: 10px;
   height: 300px;
+  margin-bottom: 0;
 }
 
 .social-icon {
