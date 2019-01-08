@@ -7,7 +7,7 @@
 html {
   background-color: #282828;
   font-family: 'Roboto Mono', monospace;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.5;
   color: #282828;
 }
@@ -37,9 +37,8 @@ h2 {
 nav {
   background-color: #282828;
   color: #fbf1c7;
-  padding: 25px 0 40px 0;
+  padding: 20px 0 15px 0;
   position: fixed;
-  text-align: right;
   width: 100%;
 }
 
@@ -58,10 +57,6 @@ h1, h2, p, img {
   margin-bottom: 50px;
 }
 
-section > p:first-of-type {
-  margin-bottom: 25px;
-}
-
 /* ========================
 
         List Items
@@ -70,8 +65,18 @@ section > p:first-of-type {
 
 nav li {
   display: inline-block;
-  padding-right: 70px;
+  padding-right: 50px;
   font-size: 0.6rem;
+}
+
+nav li:first-of-type {
+  margin-left: 3vw;
+  margin-right: 65vw;
+  vertical-align: 6px;
+}
+
+nav li:last-of-type {
+  padding-right: 0;
 }
 
 /* ========================
@@ -90,12 +95,10 @@ a:hover {
 }
 
 a.button {
-  background-color: #282828;
-  border: 0;
+  background-color: #fbf1c7;
+  border: 2px solid #282828;
   border-radius: 5px;
-  color: #fbf1c7;
-  cursor: pointer;
-  font-family: 'Roboto Mono', monospace;
+  color: #282828;
   font-size: 0.6rem;
   font-weight: bold;
   padding: 0.4rem 0.6rem;
@@ -103,7 +106,9 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #98971a;
+  background-color: #282828;
+  border: 0;
+  color: #fbf1c7;
 }
 
 /* ========================
@@ -112,9 +117,24 @@ a.button:hover {
 
    ======================== */
 
+.jason {
+  float: left;
+  margin-right: 60px;
+  width: 300px;
+}
+
 .bam-deploy {
   background-color: #282828;
   border: 10px solid #282828;
   border-radius: 10px;
   height: 300px;
+}
+
+.social-icon {
+  margin-bottom: 0;
+  width: 30px;
+}
+
+.social-icon:hover {
+  opacity: 0.5;
 }
