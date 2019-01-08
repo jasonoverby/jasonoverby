@@ -7,7 +7,7 @@
 html {
   background-color: #282828;
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.5;
   color: #282828;
 }
@@ -70,7 +70,7 @@ nav li {
   font-size: 0.6rem;
 }
 
-nav p:first-of-type {
+nav p {
   left: 30px;
   position: fixed;
   top: 18px;
@@ -121,7 +121,7 @@ a:hover {
 .jason {
   float: left;
   margin: 20px 60px 40px 0;
-  width: 300px;
+  width: 267px;
 }
 
 .bam-deploy {
@@ -140,6 +140,12 @@ a:hover {
   opacity: 0.5;
 }
 
+nav li:first-of-type .social-icon {
+  vertical-align: -3px;
+  width: 35px;
+}
+
+
 
 /* ========================
 
@@ -151,11 +157,9 @@ a:hover {
   .jason {
     display: none;
   }
-}
 
-@media (max-width: 600px) {
-  body {
-    font-size: 24px;
+  nav p {
+    display: none;
   }
 
   header {
@@ -165,9 +169,11 @@ a:hover {
   nav {
     text-align: center;
   }
+}
 
-  nav p {
-    display: none;
+@media (max-width: 600px) {
+  body {
+    font-size: 24px;
   }
 
   nav li:last-of-type {
