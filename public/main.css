@@ -164,7 +164,11 @@ nav li:first-of-type .social-icon {
   }
 
   header {
-    padding-top: 100px;
+    padding: 145px 100px 60px 100px;
+  }
+
+  section {
+    padding: 100px;
   }
 
   nav {
