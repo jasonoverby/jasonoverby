@@ -259,8 +259,17 @@ section {
     width: 20px;
   }
 
+  nav li:first-of-type .social-icon {
+    vertical-align: -4px;
+    width: 25px;
+  }
+
   header {
     padding: 100px 50px 60px 50px;
+  }
+
+  header h2 {
+    font-size: 1.1rem;
   }
 
   section {
@@ -277,5 +286,19 @@ section {
 
   .more-about-me {
     margin-top: 50px;
+  }
+
+  .more-about-me div:first-of-type {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  html {
+    font-size: 12px;
+  }
+
+  header {
+    padding-top: 90px;
   }
 }
