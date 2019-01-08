@@ -47,12 +47,12 @@ nav {
 header {
   background-color: #282828;
   color: #fbf1c7;
-  padding: 160px 100px 60px 100px;
+  padding: 180px 200px 60px 200px;
 }
 
 section {
   background-color: #fbf1c7;
-  padding: 100px;
+  padding: 100px 200px;
 }
 
 h2, p, img {
@@ -122,7 +122,7 @@ a:hover {
 .jason {
   float: left;
   margin: 0 60px 20px 0;
-  width: 290px;
+  width: 300px;
 }
 
 .bam-deploy {
