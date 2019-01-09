@@ -305,4 +305,8 @@ section {
   p, h2 {
     margin-bottom: 20px;
   }
+
+  .button {
+    margin-bottom: 0;
+  }
 }
