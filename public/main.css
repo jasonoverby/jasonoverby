@@ -135,7 +135,7 @@ section {
   margin-bottom: 50px;
 }
 
-.bam p {
+.bam p:last-of-type {
   margin-bottom: 20px;
 }
 
