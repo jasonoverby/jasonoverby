@@ -165,6 +165,24 @@ section {
   color: #fbf1c7;
 }
 
+.bam > div {
+  width: 45%;
+}
+
+.bam > div:first-of-type {
+  float: left;
+}
+
+.bam > div:last-of-type {
+  float: right;
+}
+
+.bam:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 /* ========================
 
       More About Me
@@ -227,6 +245,12 @@ section {
 
   nav {
     text-align: center;
+  }
+
+
+  .bam > div {
+    clear: both;
+    width: 100%;
   }
 }
 
