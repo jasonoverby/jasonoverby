@@ -135,7 +135,7 @@ section {
   margin-bottom: 50px;
 }
 
-.bam p:last-of-type {
+.bam p:not(:first-of-type) {
   margin-bottom: 20px;
 }
 
