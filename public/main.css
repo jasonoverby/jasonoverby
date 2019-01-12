@@ -143,6 +143,12 @@ section > div {
   margin-bottom: 20px;
 }
 
+.bam h1 img {
+  margin: 0;
+  vertical-align: -5px;
+  width: 35px;
+}
+
 .bam-deploy {
   background-color: #282828;
   border: 10px solid #282828;
@@ -315,6 +321,10 @@ section > div {
     padding-right: 0;
   }
 
+  .bam h1 img {
+    width: 28px;
+  }
+
   .more-about-me {
     padding-top: 50px;
   }
@@ -339,6 +349,10 @@ section > div {
 
   .bam {
     padding-bottom: 50px;
+  }
+
+  .bam h1 img {
+    width: 22px;
   }
 
   .button {
