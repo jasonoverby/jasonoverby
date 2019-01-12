@@ -120,8 +120,11 @@ header p {
    ======================== */
 
 section {
-  background-color: #fbf1c7;
   clear: both;
+}
+
+section > div {
+  background-color: #fbf1c7;
   padding: 80px 200px;
 }
 
@@ -132,7 +135,8 @@ section {
    ======================== */
 
 .bam {
-  margin-bottom: 50px;
+  background-color: #b8bb26;
+  padding-bottom: 50px;
 }
 
 .bam p:not(:first-of-type) {
@@ -148,10 +152,10 @@ section {
 }
 
 .button {
-  background-color: #fbf1c7;
+  background-color: #282828;
   border: 2px solid #282828;
   border-radius: 5px;
-  color: #282828;
+  color: #b8bb26;
   display: inline-block;
   font-size: 0.6rem;
   font-weight: bold;
@@ -161,8 +165,8 @@ section {
 }
 
 .button:hover {
-  background-color: #282828;
-  color: #fbf1c7;
+  background-color: #b8bb26;
+  color: #282828;
 }
 
 .bam > div {
@@ -190,7 +194,7 @@ section {
    ======================== */
 
 .more-about-me {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .more-about-me div {
@@ -239,7 +243,7 @@ section {
     font-size: 1rem;
   }
 
-  section {
+  section > div {
     padding: 80px;
   }
 
@@ -247,6 +251,9 @@ section {
     text-align: center;
   }
 
+  .bam {
+    padding-bottom: 80px;
+  }
 
   .bam > div {
     clear: both;
@@ -296,7 +303,7 @@ section {
     font-size: 1.1rem;
   }
 
-  section {
+  section > div {
     padding: 50px;
   }
 
@@ -309,7 +316,7 @@ section {
   }
 
   .more-about-me {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .more-about-me div:first-of-type {
