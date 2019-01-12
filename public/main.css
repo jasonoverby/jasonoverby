@@ -337,6 +337,10 @@ section > div {
     margin-bottom: 20px;
   }
 
+  .bam {
+    padding-bottom: 50px;
+  }
+
   .button {
     margin-bottom: 0;
   }
