@@ -169,6 +169,10 @@ section > div {
   color: #282828;
 }
 
+.presentation a {
+  color: #fbf1c7;
+}
+
 .bam > div {
   width: 45%;
 }
