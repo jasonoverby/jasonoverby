@@ -7,7 +7,7 @@ require 'tilt/erubis'
 before do
   @title = 'JASON OVERBY'
 
-  @nav_links = { 'bam'            => 'https://bam-lambda.com',
+  @nav_links = { 'bam'            => 'https://www.bam-lambda.com',
                  'github'         => 'http://github.com/jasonoverby',
                  'linkedin'       => 'http://www.linkedin.com/in/jasoncoverby/',
                  'email'          => 'mailto:j@jasonoverby.com',
